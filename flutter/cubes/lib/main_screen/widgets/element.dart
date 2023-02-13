@@ -1,4 +1,4 @@
-part of '../cubes.dart';
+part of '../cubes_screen.dart';
 
 class Element extends StatelessWidget {
   const Element({

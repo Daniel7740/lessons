@@ -1,4 +1,4 @@
-part of '../cubes.dart';
+part of '../cubes_screen.dart';
 
 class Pyramid extends StatelessWidget {
   const Pyramid({
