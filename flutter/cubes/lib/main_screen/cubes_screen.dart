@@ -1,3 +1,4 @@
+import 'package:cubes/theme/text_style.dart';
 import 'package:flutter/material.dart';
 
 part 'widgets/element.dart';

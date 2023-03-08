@@ -6,20 +6,19 @@ class CubesAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      centerTitle: true,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Icon(
+        children: [
+          const Icon(
             Icons.view_in_ar_rounded,
             size: 35,
             color: Colors.white,
           ),
           Padding(
-            padding: EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(left: 10),
             child: Text(
               'Cube',
-              style: TextStyle(fontSize: 30, color: Colors.white),
+              style: AppTextStyle.roboto30w400,
             ),
           ),
         ],
