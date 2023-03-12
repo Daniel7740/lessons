@@ -1,5 +1,7 @@
+import 'package:counter/feature/counter_screen/bloc/couner_bloc.dart';
 import 'package:counter/feature/counter_screen/counter_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: 'CormorantInfant',
       ),
-      home: const Counter(),
+      home: BlocProvider(
+        create: (context) => CounterBloc(),
+        child: const Counter(),
+      ),
     );
   }
 }
