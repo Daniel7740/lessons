@@ -94,9 +94,27 @@ class ListOfUsers extends StatelessWidget {
             },
           );
         }
-        if (state is UserEmptyState) {
-          return const Center(
-            child: Text('Ошибка, данные не загружены!'),
+        if (state is UserErrorState) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircularProgressIndicator(
+                    color: AppColors.colorBF3012,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Ошибка, данные не загружены. Пожалуйста, проверьте интернет соединение',
+                    textAlign: TextAlign.center,
+                    style: AppTextStyles.lobster20w200,
+                  ),
+                ],
+              ),
+            ),
           );
         }
         return CircularProgressIndicator(

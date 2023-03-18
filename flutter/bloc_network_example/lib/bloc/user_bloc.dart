@@ -17,7 +17,7 @@ class UserBloc extends Bloc<UserEvent, UserState> {
       final List<User> loadUserList = await UsersRepo().getAllUsers();
       emit(UserSuccessState(successUser: loadUserList));
     } catch (_) {
-      emit(UserEmptyState());
+      emit(UserErrorState());
     }
   }
 
