@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bloc_flutter_extension_example">
    <application
-        android:label="bloc_flutter_extension_example"
+        android:label="BLoC With flutter_bloc"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
