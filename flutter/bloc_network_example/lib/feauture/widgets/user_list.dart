@@ -90,7 +90,7 @@ class ListOfUsers extends StatelessWidget {
               ),
             ),
             separatorBuilder: (BuildContext context, int index) {
-              return Divider(color: AppColors.colorBF3012);
+              return Divider(color: AppColors.color4B493D);
             },
           );
         }
