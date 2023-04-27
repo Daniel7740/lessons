@@ -1,22 +1,22 @@
 //Home Work 7 (For, For in)
 
 // 1 - Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа не подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.
-void main() {
-  List<int> task1 = [1, 2, 4, 3, 0, 5, 9, 5];
-  List<int> result1 = [];
-  for (var i = 0; i < task1.length; i++) {
-    for (var j = i + 1; j < task1.length; j++) {
-      if (task1[j] == task1[i]) {
-        result1 = [task1[i]];
-      }
-    }
-  }
-  if (result1.isNotEmpty) {
-    print('Да');
-  } else {
-    print('Нет');
-  }
-}
+// void main() {
+//   List<int> task1 = [1, 2, 4, 3, 0, 5, 9, 5];
+//   List<int> result1 = [];
+//   for (var i = 0; i < task1.length; i++) {
+//     for (var j = i + 1; j < task1.length; j++) {
+//       if (task1[j] == task1[i]) {
+//         result1 = [task1[i]];
+//       }
+//     }
+//   }
+//   if (result1.isNotEmpty) {
+//     print('Да');
+//   } else {
+//     print('Нет');
+//   }
+// }
 
 // 2 - Дан массив с числами - List<int> list = [1, 2, 3, 4, 0, 5, 5, 7]; Напишите функцию и передайте ей массив в качестве параметра. Функция должна вернуть вам среднее арифметическое данного массива, вы должны получить - 3.375.
 // void main() {
