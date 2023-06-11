@@ -14,15 +14,8 @@ class User with _$User {
   factory User.fromJson(Map<String, dynamic> json) => _$UserFronJson(json);
 }
 
-// class User {
-//   final String name;
-//   final int age;
+_$UserFronJson(Map<String, dynamic> json) {}
 
-//   User({
-//     required this.name,
-//     required this.age,
-//   });
-// }
 
 /// Для генерации кода в терминале необходимо ввести следующую комманду:
 /// flutter pub run build_runner build --delete-conflicting-outputs
